@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f1f1f1;
+}
+
+.header {
+    background: #16a085;
+    color: white;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 15px;
+}
+
+.container {
+    display: flex;
+    gap: 15px;
+    padding: 15px;
+}
+
+.left {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.left button {
+    padding: 10px;
+    border: none;
+    background: #dddddd;
+    color: #333;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.left .active {
+    background: #16a085;
+    color: white;
+}
+
+.content {
+    flex: 3;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 6px;
+    color: #333;
+}
+
+.right {
+    flex: 1;
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.footer {
+    margin: 15px;
+    padding: 10px;
+    background: #dddddd;
+    color: #333;
+    border-radius: 6px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .left {
+        flex: 100%;
+        flex-direction: row;
+    }
+
+    .left button {
+        flex: 1;
+    }
+
+    .content {
+        flex: 65%;
+    }
+
+    .right {
+        flex: 30%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left {
+        flex-direction: column;
+    }
+
+    .content,
+    .right {
+        width: 100%;
+    }
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Welcome to My Homepage</h1>
+        <p>Use the menu to select different stylesheets</p>
+    </header>
+
+    <div class="container">
+
+        <aside class="left">
+            <button class="active">Stylesheet 1</button>
+            <button>Stylesheet 2</button>
+            <button>Stylesheet 3</button>
+            <button>Stylesheet 4</button>
+            <button>No Stylesheet</button>
+        </aside>
+
+        <main class="content">
+         <h1>Same Page Different Stylesheets</h1>
+		 <br>
+    <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:</p>
+    <br>
+    <a href="#stylesheet1">Stylesheet 1, </a>
+    <a href="#stylesheet2">Stylesheet 2, </a>
+    <a href="#stylesheet3">Stylesheet 3, </a>
+    <a href="#stylesheet4">Stylesheet 4, </a>
+            </p>
+			<br>
+			    <h1>No Styles</h1>
+				<br>
+    <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet: </p>
+    <br>
+    <a href="#nostylesheet">No Stylesheet</a>
+        </main>
+
+        <aside class="right">
+            <h3>Side-Bar</h3>
+			<br>
+    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+			
+        </aside>
+
+    </div>
+
+    <footer class="footer">
+        <p>
+		<center>
+   Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit ess molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi
+        </center>
+		</p>
+    </footer>
+
+</body>
+</html>

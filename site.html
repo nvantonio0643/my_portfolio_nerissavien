@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            text-align: center;
+            background-color: #002147;
+            padding: 20px;
+            font-weight: bold;
+            color: #eaeaea;
+            font-size: 32px;
+        }
+
+        nav {
+            background-color: #d2d48c;
+            color: #fffdfd;
+            margin-top: 5px;
+            margin: 0px;
+        }
+
+        nav ul li a {
+            display: block;
+            text-align: center;
+            padding: 20px;
+            text-decoration: none;
+            color: #002147;
+
+        }
+
+        nav ul li a:hover {
+            background-color: #eaeaea;
+            color: #3d3d3d;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav ul {
+            display: flex;
+            flex-direction: row;
+            list-style-type: none;
+        }
+
+        main {
+            display: flex;
+            flex-direction: row;
+            padding:10px
+        }
+
+        aside, section, article {
+            padding: 5px;
+        }
+
+        aside h1, aside p, section h1, section p, article h1, article p {
+            padding: 2px;
+        }
+
+        footer {
+            margin-top: 5px;
+            background-color: #002147;
+            text-align: center;
+            padding: 20px;
+            color: #eaeaea;
+             font-weight: bold;
+            font-size: 32px;
+            height: 80px;
+        }
+
+        @media screen and (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>My First Website</header>
+
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Aside</h2>
+            <p>Pwede bang tayo na lang dalawa?
+Kalimutan mo na mga iba mong kasama
+Kulang ang oras 'pag kasama kita
+Gusto kita na solohin kaso 'di ko magawa
+Pwede bang tayo na lang dalawa?
+Kalimutan mo na mga iba mong kasama
+Kulang ang oras 'pag kasama kita
+Gusto kita na solohin kaso 'di ko magawa
+</p>
+        </aside>
+
+        <section>
+            <h2>Section</h2>
+            <p>Pa'no? Lagi na lang may kahati sa'yong orasan
+Kung kani-kanino ka nakikipaggaguhan
+Kahit alam kong marami kang lalaking binubuang
+Umaasa pa rin ako na matagpuan mo
+Na 'andito ako sa'yo, nakaabang
+Daming nakikipaglaro sa'yo, labas ako diyan
+'Di kita minamadali na magbago
+Hindi ako matapobre, pero kung sakali 'wag magdalawang-isip
+Tawagan ako, ano ka ba?</p>
+        </section>
+
+        <article>
+            <h2>Article</h2>
+            <p>Pwede bang tayo na lang dalawa?
+Kalimutan mo na ang mga iba mong kasama
+Kulang ang oras 'pag kasama kita
+Gusto kita na solohin kaso 'di ko magawa
+Pwede bang tayo na lang dalawa?
+Kalimutan mo na ang mga iba mong kasama
+Kulang ang oras 'pag kasama kita</p>
+        </article>
+    </main>
+
+    <footer>This is my Footer line</footer>
+</body>
+</html>

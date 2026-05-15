@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested List Documentation - Task 2</title>
+    <style>
+        
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+            font-family: Arial, sans-serif; 
+        }
+
+        body { 
+            background: #F7CAC9; 
+            padding: 20px;
+        }
+
+        header { 
+            text-align: center; 
+            padding: 30px; 
+            background: linear-gradient(to right, #ffb7a5, #b76e79, #ffb7a5); 
+            color: white;
+            border-radius: 12px 12px 0 0;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .main-card { 
+            background: white; 
+            max-width: 800px; 
+            margin: 0 auto 40px auto; 
+            padding: 30px; 
+            border-radius: 0 0 12px 12px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5); 
+        }
+
+        
+        .screenshot-container {
+            text-align: center;
+            margin-bottom: 30px;
+            border: 2px dashed #F759C4;
+            padding: 20px;
+            border-radius: 8px;
+            background: #fafafa;
+        }
+
+        .screenshot-container img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        
+        .description-box {
+            background: #fdf2f8;
+            padding: 25px;
+            border-left: 5px solid #F759C4;
+            margin-bottom: 10px;
+        }
+
+        .description-box h3 {
+            color: #533638;
+            margin-bottom: 15px;
+            font-size: 22px;
+        }
+
+        .description-box p {
+            line-height: 1.6;
+            color: #444;
+            font-size: 16px;
+        }
+
+        
+        .back-nav { 
+            display: block; 
+            text-align: center; 
+            margin-top: 30px; 
+            color: #533638; 
+            text-decoration: none; 
+            font-weight: bold;
+            padding: 12px;
+            border: 2px solid #533638;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+
+        .back-nav:hover {
+            background: #b76e79;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TASK 2: NESTED LIST</h1>
+        <p>Midterm Lab Project</p>
+    </header>
+
+    <div class="main-card">
+        <div class="screenshot-container">
+            <h3 style="color: #533638; margin-bottom: 15px;"> Screenshot</h3>
+            <img src="nested1.jpg" alt="Task 2 Nested List Screenshot" onerror="this.parentElement.style.display='block';">
+			<img src="nested2.jpg" alt="Task 1 Resume Screenshot" onerror="this.parentElement.style.display='block';">
+			<img src="nested3.jpg" alt="Task 1 Resume Screenshot" onerror="this.parentElement.style.display='block';">
+			<img src="nested4.jpg" alt="Task 1 Resume Screenshot" onerror="this.parentElement.style.display='block';">
+            <p style="font-size: 13px; color: #777; margin-top: 10px;">
+               
+            </p>
+        </div>
+
+        <a href="index.html" class="back-nav">← Back to Portfolio</a>
+    </div>
+
+</body>
+</html>
